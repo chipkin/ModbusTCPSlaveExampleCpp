@@ -30,3 +30,17 @@
 *.exe
 *.out
 *.app
+
+ModbusTCPSlaveExampleCpp/\.vs/
+
+ModbusTCPSlaveExampleCpp/Debug/
+
+ModbusTCPSlaveExampleCpp/Release/
+
+*.exp
+
+*.iobj
+
+*.ipdb
+
+*.pdb

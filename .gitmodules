@@ -1,0 +1,6 @@
+[submodule "submodules/cas-common"]
+	path = submodules/cas-common
+	url = https://gitlab.com/chipkin/cas-common.git
+[submodule "submodules/cas-modbus-stack"]
+	path = submodules/cas-modbus-stack
+	url = https://gitlab.com/chipkin/cas-modbus-stack.git
