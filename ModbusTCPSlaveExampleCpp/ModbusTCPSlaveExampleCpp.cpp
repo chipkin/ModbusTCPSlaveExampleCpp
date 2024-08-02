@@ -329,6 +329,10 @@ bool getModbusValue(const unsigned char slaveAddress, const unsigned char functi
 
 int main()
 {
+
+	printf("FYI: Modbus TCP Example CPP. version: 2024-Aug-02\n");
+	printf("https://github.com/chipkin/ModbusTCPSlaveExampleCpp\n");
+
 	// Load the DLL functions
 	// --------------------------------
 	if (!LoadModbusFunctions())
@@ -356,6 +360,13 @@ int main()
 
 	// Generate an example database
 	gDatabase.SampleData();
+
+	printf("FYI: Slave Address: %d\n", SETTING_MODBUS_SERVER_SLAVE_ADDRESS);
+	printf("FYI: GetCoilCount: %d\n", gDatabase.GetCoilCount());
+	printf("FYI: InputCount: %d\n", gDatabase.GetInputCount());
+	printf("FYI: GetHoldingRegistersCount: %d\n", gDatabase.GetHoldingRegistersCount());
+	printf("FYI: GetInputRegistersCount: %d\n", gDatabase.GetInputRegistersCount());
+	
 
 	// Set up the socket to listen for new incoming connections.
 	if (!gTcp.Listen(SETTING_TCP_PORT))
